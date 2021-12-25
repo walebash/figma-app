@@ -9,12 +9,11 @@ function App() {
   const [openModal, setOpenModal] = useState(false);
   return (
     <div className="App">
-      <Router>
-        <Navbar2 />
-        <Navbar />
 
-        <Transport />
-      </Router>
+      <Navbar2 />
+      <Navbar />
+      <Transport />
+
     </div>
   );
 }

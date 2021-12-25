@@ -24,6 +24,8 @@ const Modal = ({ closeModal }) => {
         setData(newdata)
         console.log(newdata);
     }
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
     return (
 
         <div className="modalBackground">
@@ -37,10 +39,12 @@ const Modal = ({ closeModal }) => {
                         </h2>
                     </div>
                     <div className="body">
-                        <button className="email-btn1">
-                            <img src={google} alt="" />
-                            Continue with Google
-                        </button>
+                        <a href="https://www.google.com" target='_blank' rel='noopener noreferrer'>
+                            <button onClick={handleClick} className="email-btn1">
+                                <img src={google} alt="" />
+                                Continue with Google
+                            </button>
+                        </a>
                         <p>or</p>
 
                         <input onChange={(e) => handle(e)} id='email' value={data.email} placeholder="Email" type="email" className="email-btn"></input>

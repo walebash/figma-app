@@ -80,7 +80,7 @@ h4 {
   font-family: Arial, Helvetica, sans-serif;
 }
 .btn-google {
-  color: white;
+  background-color: white;
   margin: 10px;
   padding: 10px;
   margin: 10px;
@@ -270,5 +270,30 @@ p {
   text-transform: capitalize;
   width: 60px;
   height: 30px;
+  cursor: pointer;
+}
+.dropdown {
+  background-color: black;
+  color: #fff;
+  font-size: 14px;
+  font-weight: lighter;
+  width: 180px;
+  list-style: none;
+  text-decoration: none;
+  
+  position: absolute;
+  top: 48px;
+  padding-left: 21px;
+  cursor: pointer;
+}
+.menulist {
+  padding: 6px;
+}
+.dropdown :hover {
+  background: rgb(65, 65, 255);
+}
+.caret {
+  color: white;
+  justify-content: flex-start;
   cursor: pointer;
 }

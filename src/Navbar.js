@@ -13,15 +13,12 @@ const Navbar = () => {
             <div className="container">
                 <FaFigma className="figma" />
                 <p><b>Welcome to Figma app!</b> Create an account to edit an collaborate on this file</p>
-
-                <button onClick={handleClick} className="btn-google">
-                    <Link to={'https://www.google.com'}>
+                <a href="https://www.google.com" target='_blank' rel='noopener noreferrer'>
+                    <button onClick={handleClick} className="btn-google">
                         <FaGoogle className="google-icon" />
-
                         continue with google
-                    </Link>
-                </button>
-
+                    </button>
+                </a>
                 <button type="button"
                     className="btn-form"
                     onClick={() => { setOpenModal(true); }}>
